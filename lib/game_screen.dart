@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:movie_trivia_questions/main_menu.dart';
 
-class AppBackground extends StatelessWidget {
-  const AppBackground(this.topGradient, this.bottomGradient,
-      this.startAlignment, this.endAlignment,
+class GameScreen extends StatelessWidget {
+  const GameScreen(this.topGradient, this.bottomGradient, this.startAlignment,
+      this.endAlignment,
       {super.key});
 
   final Color? topGradient;
@@ -26,12 +26,11 @@ class AppBackground extends StatelessWidget {
       ),
       child: const Center(
         child: Padding(
-          padding: EdgeInsets.all(8.0),
-          child: MainMenu(
-            'assets/images/film.png',
-            'MOVIE TRIVIA QUESTIONS',
-          ),
-        ),
+            padding: EdgeInsets.all(8.0),
+            child: MainMenu(
+              'assets/images/film.png',
+              'Movie Trivia Questions',
+            )),
       ),
     );
   }

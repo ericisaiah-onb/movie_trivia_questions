@@ -14,20 +14,23 @@ class MainMenu extends StatelessWidget {
       children: <Widget>[
         Image.asset(
           imagePath,
-          width: 240,
+          width: 200,
         ),
         Container(
-          margin: const EdgeInsets.only(top: 45.0, bottom: 25.0),
+          margin: const EdgeInsets.only(top: 30.0, bottom: 30.0),
           child: Text(
             title,
             style: const TextStyle(
-              color: Color.fromRGBO(255, 0, 0, 1),
-              fontSize: 18,
+              color: Colors.black,
+              fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
-        const MainButton('Start Game'),
+        const MainButton(
+          'Start Game',
+          Icon(Icons.play_arrow, color: Colors.white),
+        ),
       ],
     );
   }

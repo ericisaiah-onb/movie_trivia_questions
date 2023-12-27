@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:movie_trivia_questions/app_background.dart';
+import 'package:movie_trivia_questions/game_screen.dart';
 
 void main() {
   runApp(
     const MaterialApp(
       home: Scaffold(
-        body: AppBackground(
-            Color.fromARGB(255, 255, 105, 97),
-            Color.fromARGB(255, 255, 182, 172),
-            Alignment.topLeft,
+        body: GameScreen(Colors.white54, Colors.white70, Alignment.topLeft,
             Alignment.bottomRight),
       ),
     ),
