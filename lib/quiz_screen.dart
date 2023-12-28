@@ -3,6 +3,8 @@ import 'package:movie_trivia_questions/game_over.dart';
 import 'package:movie_trivia_questions/question.dart';
 
 class QuizScreen extends StatefulWidget {
+  const QuizScreen({super.key});
+
   @override
   _QuizScreenState createState() => _QuizScreenState();
 }
